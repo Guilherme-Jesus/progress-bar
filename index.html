@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Barra de Progresso</title>
+</head>
+
+<body>
+    <section class="progress-container">
+        <!-- Progress Bar Section -->
+        <div class="progress-bar" id="progressBar1"></div>
+        <div class="progress-bar" id="progressBar2"></div>
+        <div class="progress-bar" id="progressBar3"></div>
+        <div class="progress-bar" id="progressBar4"></div>
+        <div class="percentage-label" id="percentageLabel">0</div>
+        <!-- Icons -->
+        <img src="/assets/lightning-large.svg" alt="Lightning Icon" class="icon" id="icon1">
+        <img src="/assets/heart-large.svg" alt="Heart Icon" class="icon" id="icon2">
+        <img src="/assets/star-large.svg" alt="Star Icon" class="icon" id="icon3">
+    </section>
+
+    <!-- Aula Atual Info -->
+    <p id="aulaAtual">Aula Atual:</p>
+    <!-- Control Buttons -->
+    <div class="controls">
+        <button onclick="moveBackward()">&lt;</button>
+        <button onclick="moveForward()">&gt;</button>
+    </div>
+
+    <script src="/js/index.js"></script>
+</body>
+</html>
