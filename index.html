@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js"
+        integrity="sha384-+9x4eASXehbS4cSiWiZ5N7UACl3+tl5z2mlYOur6faDFE8p/6AZ5sISR0PCvP+OF"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="/css/style.css">
     <title>Barra de Progresso</title>
 </head>
@@ -10,19 +15,39 @@
 <body>
     <section class="progress-container">
         <!-- Progress Bar Section -->
+        
         <div class="progress-bar" id="progressBar1"></div>
         <div class="progress-bar" id="progressBar2"></div>
         <div class="progress-bar" id="progressBar3"></div>
         <div class="progress-bar" id="progressBar4"></div>
         <div class="percentage-label" id="percentageLabel">0</div>
         <!-- Icons -->
+
         <img src="/assets/lightning-large.svg" alt="Lightning Icon" class="icon" id="icon1">
         <img src="/assets/heart-large.svg" alt="Heart Icon" class="icon" id="icon2">
         <img src="/assets/star-large.svg" alt="Star Icon" class="icon" id="icon3">
+
+        <!-- Lottie Animations -->
+
+    <div class="lottie" id="lottie1">
+        <lottie-player src="/assets/lottie/heart.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    </div>
+    <div class="lottie" id="lottie2">
+        <lottie-player src="/assets/lottie/lightning.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    </div>
+    <div class="lottie" id="lottie3">
+        <lottie-player src="/assets/lottie/star.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    </div>
+
+    <!-- Lottie Audio -->
+    <audio id="lottie1Audio" src="/assets/audio/lightning-audio.mp4"></audio>
+    <audio id="lottie2Audio" src="/assets/audio/heart-audio.mp4"></audio>
+    <audio id="lottie3Audio" src="/assets/audio/star-audio.mp4"></audio>
     </section>
 
     <!-- Aula Atual Info -->
     <p id="aulaAtual">Aula Atual:</p>
+
     <!-- Control Buttons -->
     <div class="controls">
         <button onclick="moveBackward()">&lt;</button>
@@ -31,4 +56,5 @@
 
     <script src="/js/index.js"></script>
 </body>
+
 </html>
