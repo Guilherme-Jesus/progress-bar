@@ -91,7 +91,7 @@ button:hover {
     height: 30px;
     position: absolute;
     top: 100%;
-    margin-top: 12px;
+    margin-top: 10px;
     visibility: hidden;
     left: 50%;
     transform: translateX(-50%);
@@ -138,4 +138,62 @@ button:hover {
     margin-top: 80px;
     font-size: 20px;
     font-weight: bold;
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+    .progress-container {
+        width: 60%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    #aulaAtual {
+        font-size: 18px;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 480px) {
+    .progress-container {
+        width: 80%;
+    }
+
+    button {
+        padding: 3px 6px;
+        font-size: 12px;
+    }
+
+    .percentage-label {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .lottie {
+        transform: translateX(-50%) translateY(-50%);
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .lottie lottie-player {
+        width: 80px;
+        height: 80px;
+        margin-top: 20px;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    #aulaAtual {
+        font-size: 16px;
+     }
 }
